@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="main.Main"
+            prefHeight="-Infinity" prefWidth="-Infinity"
+            minWidth="800" minHeight="600">
+    <top>
+        <MenuBar fx:id="menuBar" onKeyPressed="#onAction">
+            <Menu text="Tournaments">
+                <MenuItem text="New..."/>
+                <MenuItem text="Save"/>
+                <MenuItem text="Load..."/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Exit"/>
+            </Menu>
+
+            <Menu text="Edit">
+                <MenuItem text="Copy"/>
+                <MenuItem text="Cut"/>
+                <MenuItem text="Paste"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox spacing="5" alignment="CENTER">
+            <TextField promptText="Enter your name" fx:id="name"
+                       prefWidth="200" maxWidth="200"/>
+            <Button text="Hello world!" onAction="#onAction" fx:id="start"/>
+        </VBox>
+    </center>
+</BorderPane>
