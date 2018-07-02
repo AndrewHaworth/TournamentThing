@@ -29,10 +29,15 @@
         </MenuBar>
     </top>
     <center>
-        <VBox spacing="5" alignment="CENTER">
+        <HBox spacing="5" alignment="CENTER">
+            <Button text="Hello world!" onAction="#onAction" fx:id="start"/>
+            <Button text="Exit" onAction="#onAction" fx:id="exit"/>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox spacing="5" alignment="BASELINE_CENTER">
             <TextField promptText="Enter your name" fx:id="name"
                        prefWidth="200" maxWidth="200"/>
-            <Button text="Hello world!" onAction="#onAction" fx:id="start"/>
         </VBox>
-    </center>
+    </bottom>
 </BorderPane>

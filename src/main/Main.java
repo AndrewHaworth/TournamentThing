@@ -18,6 +18,8 @@ public class Main extends Application {
     public TextField name;
     @FXML
     public MenuBar menuBar;
+    @FXML
+    public Button exit;
 
     public static void main(String[] args) {
         launch(args);
@@ -36,5 +38,7 @@ public class Main extends Application {
     public void onAction(Event e) {
         if (e.getSource() == start)
             System.out.println(name.getText());
+        else if (e.getSource() == exit)
+            System.exit(0);
     }
 }
